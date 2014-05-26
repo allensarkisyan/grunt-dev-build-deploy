@@ -1,7 +1,11 @@
 {
 	"name": "grunt-build-deploy",
-	"author": "Allen Sarkisyan",
+	"author": {
+		"name": "Allen Sarkisyan",
+		"url": "http://github.com/allensarkisyan"
+	},
 	"version": "1.0.0",
+	"license": "MIT",
 	"description": "Grunt Build and Deploy - boilerplate project for quickly setting up a build environment for HTML5 applications. clean, concat, cssmin, uglify & copy",
 	"keywords": ["build", "deploy", "grunt-build-deploy", "concat", "clean", "compile", "cssmin", "uglify", "grunt build", "HTML5 build", "javascript minification"],
 	"main": "Gruntfile.js",
@@ -13,7 +17,6 @@
 		"node" : "*",
 		"npm": "*"
 	},
-	"dependencies": {},
 	"devDependencies": {
 		"grunt": "*",
 		"grunt-contrib-jshint": "~0.10.0",
@@ -26,5 +29,9 @@
 	"repository": {
 		"type": "git",
 		"url": "http://github.com/allensarkisyan/grunt-build-deploy.git"
-	}
+	},
+	"bugs": {
+		"url": "http://github.com/allensarkisyan/grunt-build-deploy/issues"
+	},
+	"homepage": "http://github.com/allensarkisyan/grunt-build-deploy"
 }
