@@ -2,7 +2,7 @@
 	"name": "grunt-build-deploy",
 	"author": "Allen Sarkisyan",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Grunt Build and Deploy - boilerplate project for quickly setting up a build environment for HTML5 applications. clean, concat, cssmin, uglify & copy",
 	"keywords": ["build", "deploy", "grunt-build-deploy", "concat", "clean", "compile", "cssmin", "uglify", "grunt build", "HTML5 build", "javascript minification"],
 	"main": "Gruntfile.js",
 	"scripts": {
