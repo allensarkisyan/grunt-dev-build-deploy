@@ -1,0 +1,71 @@
+{
+	"banner": "/**! <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today(\"dd-mm-yyyy\") %> - Author: <%= pkg.author %> */",
+	"clean": {
+		"directories": {
+			"build": ["build"],
+			"public": ["public"]
+		}
+	},
+	"concat": {
+		"files": {
+			"build/js/app-<%= pkg.name %>.<%= pkg.version %>.js": [
+				"assets/js/jquery.js",
+				"assets/js/underscore.js"
+			],
+			"build/js/app-<%= pkg.name %>-vendor.<%= pkg.version %>.js": [
+				"assets/js/vendor/*.js"
+			]
+		}
+	},
+	"cssmin": {
+		"options": {
+			"expand": true
+		},
+		"files": {
+			"build/css/app-<%= pkg.name %>.<%= pkg.version %>.min.css": [
+				"assets/css/normalize.css",
+				"assets/css/bootstrap.css"
+			]
+		}
+	},
+	"uglify": {
+		"options": {
+			"compress": true,
+			"mangle": true,
+			"verbose": true,
+			"drop_console": true
+		},
+		"environment": {
+			"production": {
+				"files": {
+					"build/js/app-<%= pkg.name %>.<%= pkg.version %>.min.js": [
+						"build/js/app-<%= pkg.name %>.<%= pkg.version %>.js"
+					],
+					"build/js/app-<%= pkg.name %>-vendor.<%= pkg.version %>.min.js": [
+						"build/js/app-<%= pkg.name %>-vendor.<%= pkg.version %>.js"
+					]
+				}
+			}
+		}
+	},
+	"copy": {
+		"production": {
+			"files": [
+				{ 
+					"src": ["build/js/app-<%= pkg.name %>.<%= pkg.version %>.min.js"],
+					"dest": "public/assets/js/app-<%= pkg.name %>.<%= pkg.version %>.min.js"
+				},
+				{
+					"src": ["build/js/app-<%= pkg.name %>-vendor.<%= pkg.version %>.min.js"],
+					"dest": "public/assets/js/app-<%= pkg.name %>-vendor.<%= pkg.version %>.min.js"
+				},
+				{
+					"src": ["build/css/app-<%= pkg.name %>.<%= pkg.version %>.min.css"],
+					"dest": "public/assets/css/app-<%= pkg.name %>.<%= pkg.version %>.min.css"
+				},
+				{ "src": ["assets/img/*"], "dest": "public/" },
+				{ "src": ["assets/fonts/*"], "dest": "public/" }
+			]
+		}
+	}
+}
