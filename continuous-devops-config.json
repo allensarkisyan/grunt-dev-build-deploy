@@ -1,0 +1,51 @@
+{
+	"nodemon": {
+		"watchedFolders": ["controllers"],
+		"ignore": [
+			"node_modules/**",
+			"Gruntfile.js",
+			".rebooted",
+			"assets/**",
+			"karma.conf.js",
+			"build-config.json",
+			"continuous-devops-config.json",
+			"tests/**"
+		]
+	},
+	"watch": {
+		"karma": {
+			"files": [
+				"assets/js/vendor/*.js",
+				"assets/js/*.js",
+				"tests/jasmine/*.js"
+			]
+		},
+		"scripts": {
+			"files": [
+				"app.js",
+				"controllers/*.js"
+			]
+		},
+		"views": {
+			"files": [
+				".rebooted",
+				"assets/css/**/*.css",
+				"views/**/*.jade"
+			]
+		}
+	},
+	"karma": {
+		"test": {
+			"files": [
+				"assets/js/underscore.js",
+				"tests/jasmine/*.js"
+			],
+			"preprocessors": {
+				"assets/js/underscore.js": "coverage"
+			}
+		}
+	},
+	"jshint": {
+		"files": ["Gruntfile.js"]
+	}
+}

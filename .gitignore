@@ -1,5 +1,7 @@
 node_modules/
-*.DS_store
+*.rebooted
+*.DS_Store
 *.sublime-workspace
 public/*
 build/*
+tests/coverage/
