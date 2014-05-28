@@ -1,13 +1,13 @@
 {
-	"name": "grunt-build-deploy",
+	"name": "grunt-dev-build-deploy",
 	"author": {
 		"name": "Allen Sarkisyan",
 		"url": "http://github.com/allensarkisyan"
 	},
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "MIT",
-	"description": "Grunt Build and Deploy - boilerplate project for quickly setting up a build environment for HTML5 applications. clean, concat, cssmin, uglify & copy",
-	"keywords": ["build", "deploy", "grunt-build-deploy", "concat", "clean", "compile", "cssmin", "uglify", "grunt build", "HTML5 build", "javascript minification"],
+	"description": "Grunt Dev, Build, and Deploy - boilerplate project for quickly setting up a continuous integration development, build, and deployment environment for HTML5 applications. clean, concat, cssmin, uglify & copy with automated unit testing and livereload.",
+	"keywords": ["build", "deploy", "grunt build", "karma", "automation", "livereload", "concat", "clean", "compile", "cssmin", "uglify", "grunt build", "HTML5 build", "javascript minification"],
 	"main": "Gruntfile.js",
 	"scripts": {
 		"start": "Gruntfile.js"
@@ -42,10 +42,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "http://github.com/allensarkisyan/grunt-build-deploy.git"
+		"url": "http://github.com/allensarkisyan/grunt-dev-build-deploy.git"
 	},
 	"bugs": {
-		"url": "http://github.com/allensarkisyan/grunt-build-deploy/issues"
+		"url": "http://github.com/allensarkisyan/grunt-dev-build-deploy/issues"
 	},
-	"homepage": "http://github.com/allensarkisyan/grunt-build-deploy"
+	"homepage": "http://github.com/allensarkisyan/grunt-dev-build-deploy"
 }
