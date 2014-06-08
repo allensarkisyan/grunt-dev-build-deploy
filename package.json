@@ -4,9 +4,9 @@
 		"name": "Allen Sarkisyan",
 		"url": "http://github.com/allensarkisyan"
 	},
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"license": "MIT",
-	"description": "Grunt - Conitunous Development Environment: Grunt Dev, Build, and Deploy - boilerplate project for quickly setting up a continuous integration development, build, and deployment environment for HTML5 applications. clean, concat, cssmin, uglify & copy with automated unit testing and livereload. - Enabling true test driven development.",
+	"description": "Grunt - Continuous Development Environment: Grunt Dev, Build, and Deploy - boilerplate project for quickly setting up a continuous integration development, build, and deployment environment for HTML5 applications. clean, concat, cssmin, uglify & copy with automated unit testing and livereload. - Enabling true test driven development.",
 	"keywords": ["build", "deploy", "grunt build", "karma", "automation", "livereload", "concat", "clean", "compile", "cssmin", "uglify", "grunt build", "HTML5 build", "javascript minification", "TDD", "test driven development", "unit testing", "continuous integration", "continuous development", "continuous deployment"],
 	"main": "Gruntfile.js",
 	"scripts": {
